@@ -120,7 +120,7 @@ import google.generativeai as genai
 api_key = st.secrets["GOOGLE_API_KEY"]
 
 # Configure the Generative AI with API key (no direct SSL context support)
-genai.configure(api_key="AIzaSyBjinJz7RnP-YOeFh8x__nTbtDzB5wrNpU")
+genai.configure(api_key=api_key)
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 # Your Streamlit UI setup
